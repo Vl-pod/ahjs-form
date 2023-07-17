@@ -1,0 +1,51 @@
+body {
+    height: 100vh;
+    background-color: rgb(36, 29, 63);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25%;
+}
+
+.btn {
+    position: relative;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.btn.inactive {
+    background-color: green;
+    transition: .3s;
+    color: white;
+    box-shadow: 5px 5px 10px greenyellow;
+}
+
+.btn.active {
+    background-color: red;
+    transition: .3s;
+    color: white;
+    border: none;
+    box-shadow: 5px 5px 10px rgb(230, 58, 58);
+}
+
+.tooltlip {
+    transition: opacity 0.5s;
+    position: absolute;
+    opacity: 0; 
+}
+.tooltlip.show {
+    opacity: 1; 
+    box-shadow: 5px 5px 10px rgb(98, 34, 162);
+}
+
+.tooltlip__header {
+    background-color: #efeeee;
+    padding: 5px 15px 0px 15px;
+}
+
+.tooltlip__body {
+    background-color: white;
+    padding: 0px 15px 5px 15px;
+}
